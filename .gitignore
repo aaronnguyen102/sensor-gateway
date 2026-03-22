@@ -1,0 +1,21 @@
+﻿# Compiled binaries
+gateway
+sensor_node
+*.o
+
+# Database (runtime generated)
+sensor_data.db
+sensor_data.db-wal
+sensor_data.db-shm
+
+# Log files
+gateway.log
+
+# Python
+__pycache__/
+*.pyc
+
+# Editor
+.vscode/
+*.swp
+*~
