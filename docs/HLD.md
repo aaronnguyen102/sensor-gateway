@@ -16,7 +16,7 @@ The system consists of three main subsystems:
 
 ## 3. Architecture Block Diagram
 
-![System Architecture](./docs/images/System_architecture.png)
+![System Architecture](images/System_architecture.png)
 
 ## 4. Component Descriptions
 
@@ -50,14 +50,14 @@ Python Flask application serving as both static file server and API proxy. Proxi
 
 ## 5. Data Flow
 
-![Data flow](./docs/images/Data_flow.png)
+![Data flow](images/Data_flow.png)
 
 ## 6. Communication Protocol
 
 ### 6.1 Sensor Node ↔ Gateway: 
 TCP + Binary Packet Protocol (19 bytes)
 
-![Binary Packet Protocol](./docs/images/Binary_packet_protocol.png)
+![Binary Packet Protocol](images/Binary_packet_protocol.png)
 
 ### 6.2 Gateway ↔ Frontend: 
 REST API over HTTP
@@ -68,13 +68,13 @@ REST API over HTTP
 
 ## 7. Thread Model
 
-![Thread Model](./docs/images/Thread_mode.png)
+![Thread Model](images/Thread_mode.png)
 
 All client threads are detached. Shared resources protected by mutexes: `g_db_mutex` (storage), `g_log_mutex` (logging). Client count tracked with `atomic_int`.
 
 ## 8. Initialization & Shutdown
 
-![Initialization & Shutdown](./docs/images/Initialization_Shutdown.png)
+![Initialization & Shutdown](images/Initialization_Shutdown.png)
 
 This LIFO pattern prevents use-after-free: no component accesses a resource that has already been released.
 
