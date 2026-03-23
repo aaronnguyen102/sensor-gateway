@@ -4,7 +4,12 @@ A TCP-based sensor data gateway running on BeagleBone Black. Collects temperatur
 
 Built entirely in C using POSIX APIs to demonstrate Linux system programming skills: socket programming, multi-threading, signal handling, database integration, and REST API design.
 
-![Dash board](./docs/images/Dashboard.png)
+## Demo
+
+[![Demo Video](docs/images/Dashboard.png)](https://youtu.be/lVuCAufhTlo)
+
+> 4-minute demo: gateway startup, 5 sensor nodes, real-time dashboard,
+> error handling, graceful shutdown.
 
 ## Architecture
 
